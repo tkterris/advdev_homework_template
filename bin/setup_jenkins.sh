@@ -32,10 +32,11 @@ items:
       type: "Git"
       git:
         uri: "${REPO}"
+      contextDir: "openshift-tasks"
     strategy:
       type: "JenkinsPipeline"
       jenkinsPipelineStrategy:
-        jenkinsfilePath: openshift-tasks/Jenkinsfile
+        jenkinsfilePath: Jenkinsfile
         env:
         - name: "GUID"
           value: "${GUID}"
