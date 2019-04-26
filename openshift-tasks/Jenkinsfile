@@ -72,7 +72,7 @@ podTemplate(
 
         // TBD: Publish to Nexus
 
-        sh "mvn clean deploy -DaltDeploymentRepository=nexus::default::http://nexus3.gpte-hw-cicd.svc.cluster.local:8081/repository/releases -DskipTests"
+        sh "mvn clean deploy -DaltDeploymentRepository=nexus::default::http://nexus3.gpte-hw-cicd.svc.cluster.local:8081/repository/all-maven-public -DskipTests"
       }
 
       // Build the OpenShift Image in OpenShift and tag it.
