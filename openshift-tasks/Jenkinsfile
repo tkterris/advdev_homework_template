@@ -99,7 +99,7 @@ podTemplate(
         script{ openshift.withCluster() { openshift.withProject("${GUID}-tasks-dev") {
 
           openshift.set("image", "dc/tasks", "tasks=docker-registry.default.svc:5000/${GUID}-tasks-dev/tasks:${devTag}")
-          openshift.set("env", "dc/${destApp}", "VERSION=\"${devTag} (tasks-dev)\"")
+          openshift.set("env", "dc/tasks", "VERSION=\"${devTag} (tasks-dev)\"")
 
           openshift.selector('configmap', 'tasks-config').delete("--ignore-not-found=true")
           openshift.create("configmap", "tasks-config", "--from-file=application-users.properties=./configuration/application-users.properties", "--from-file=application-roles.properties=./configuration/application-roles.properties")
