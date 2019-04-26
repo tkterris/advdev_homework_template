@@ -1,7 +1,8 @@
-= OpenShift Advanced Development Homework Template
+= OpenShift Advanced Development Homework 
 
-[NOTE]
-If you are looking for the 40h homework (Parksmap etc.) please checkout branch `40h`.
+This code can be viewed here: *https://github.com/tkterris/advdev_homework_template[https://github.com/tkterris/advdev_homework_template^]*
+
+The successful build is number *https://jenkins-gpte-jenkins.apps.na311.openshift.opentlc.com/blue/organizations/jenkins/Advanced%20Development%20Homework%20Grading/detail/Advanced%20Development%20Homework%20Grading/1363/pipeline[1363]*
 
 == Tasks Demo Application
 
