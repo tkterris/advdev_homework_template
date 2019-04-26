@@ -1,5 +1,7 @@
 #!/bin/bash
 
+./bin/cleanup.sh f46e
+
 ./bin/setup_projects.sh f46e tterris-redhat.com false
 ./bin/setup_dev.sh f46e
 ./bin/setup_prod.sh f46e
